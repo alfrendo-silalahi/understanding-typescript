@@ -41,3 +41,42 @@ let possibleResults: [number, number];
 
 possibleResults = [1, 2];
 // possibleResults = [1, 2, 3];
+
+// object
+const user: {
+  name: string;
+  age: number;
+  hobbies?: string[];
+  role?: {
+    description: string;
+  };
+} = {
+  name: "Alfrendo Silalahi",
+  age: 25,
+  hobbies: ["Football"],
+  role: {
+    description: "Software Engineer",
+  },
+};
+console.log(user);
+
+// must not be null using {}
+const val: {} = "Test value";
+console.log(val);
+
+// record type
+let data: Record<string, number | string>;
+
+data = {
+  key: 1,
+  key2: "2",
+};
+
+// enums
+enum Role {
+  ADMIN = "admin",
+  USER = "user",
+}
+
+const role = Role.ADMIN;
+console.log(role.toString());
